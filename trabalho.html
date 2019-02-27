@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title> Trabalho de Contabilidade </title>
+	<style type="text/css">
+		h1{
+			color: #8A0808;
+			text-align: center;
+			font-size:60px;
+		}
+		h2{
+			color: #8A0868;
+			text-align: center;
+			font-size:40px;
+		}
+		button{	
+			transition: 400ms ease;
+			margin: 10px;
+			cursor: pointer;	
+			border-radius: 50px;	
+			font-size: 25px;
+			background-color:#5882FA;
+
+		}
+		p{
+			text-align: center
+		}
+	</style>	
+</head>
+<body background="C:\Users\Daniel\Desktop\Trabalho_ads\depois do login\imagen\fundo06.jpg">
+
+	<script  type="text/javascript">
+		function abrepg(link){
+			window.location.href=link//           ------   isso faz com que abra o link na msm pagina ----
+			//window.open(link);// isso faz com que abra o link em uma nova guia
+		}
+		function menu(link){
+			window.location.href=link
+		}
+	</script>
+	<hr> 
+		<h1> Bem vindos </h1>
+	<hr>
+	<h2> Escolha uma das opções abaixo </h2>
+	<p>
+		<button value="probabilidade.html" onclick="abrepg(value)"> Probabilidade </button>
+	</p>
+	<p>
+		<button value="descritiva.html" onclick="abrepg(value)"> Descritiva </button>
+	</p>
+	<p>
+		<button value="correlação e Regressão.html" onclick="abrepg(value)"> Correlação e Regressão </button>
+	</p>
+	<p>
+		<button value="C:\Users\Daniel\Desktop\Trabalho_ads\login.html" onclick="menu(value)" >Voltar ao menu</button>
+	</p>
+</body>
+</html>
