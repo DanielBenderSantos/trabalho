@@ -1,0 +1,23 @@
+	h1{
+		text-align: center;
+		font-size: 50px;
+		border-radius: 30px;
+		background-color:#5882FA;
+	
+
+	}
+	h2{
+		text-align: center;
+		font-size: 40px;
+	}
+	button{
+		transition: 400ms ease;
+		margin: 10px;
+		cursor: pointer;	
+		border-radius: 30px;	
+		font-size: 90px;
+		background-color:#5882FA;
+	}
+	p{
+		text-align: center;
+	}

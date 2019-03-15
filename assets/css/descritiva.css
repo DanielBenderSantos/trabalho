@@ -1,0 +1,15 @@
+h1{
+	font-size: 50px;
+	text-align: center; 
+}
+p{
+	text-align: center;
+	font-size:  30px;
+}
+select{
+	text-align: center;
+	font-size:  20px;
+}
+button{
+	font-size: 30px;
+}

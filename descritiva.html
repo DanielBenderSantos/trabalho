@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style type="text/css">
-		h1{
-			font-size: 50px;
-			text-align: center; 
-		}
-		p{
-			text-align: center;
-			font-size:  30px;
-		}
-		select{
-			text-align: center;
-			font-size:  20px;
-		}
-		button{
-			font-size: 30px;
-		}
-	</style>
+	<meta charset="utf-8">
+ <!-- <link rel="stylesheet" type="text/css" href="C:\Users\Daniel\Desktop\Trabalho_ads\assets\css\descritiva.css"> CSS -->
 	<title>Descritita</title>
 </head>
 <body>
-	<script src="C:\Users\Daniel\Desktop\Trabalho_ads\assets\js\descritiva.js">></script>
+	<script src="C:\Users\Daniel\Desktop\Trabalho_ads\assets\js\descritiva.js"></script>
 	<h1> Descritiva </h1>
 	<hr>
 	<p>
-		Digite os dados aqui <Br> <input type="number" id="dados">
+		Digite os dados aqui <Br> <input type="number" id="dadosN">
 	</p>
+	<p>
+		<button onclick="adiciona()">Adicionar numero </button>
+	</p>
+	<p>
+		<p id="saida">
+	</p>
+
 	<hr>
 	<p> escolha uma opção <Br> 
 		<select id="caixa_amostra_população">
@@ -37,11 +29,7 @@
 	</p>
 	<hr>
 	<p>
-		Nome da variável pesquisada <Br> <input type="text" id="nomePesquisado">
-	</p>
-	<hr>
-	<p>
-		Nome da Fi <Br> <input type="text" id="Fi">
+		Nome da variável pesquisada <Br> <input type="text" id="nomeP">
 	</p>
 	<hr>
 	<p>
@@ -56,7 +44,7 @@
 	</p>
 	<hr>
 	<p>
-		Ordem <Br> <input type="number" id="ordem">
+		Ordem <Br> <input type="text" id="ordem">
 	</p>
 	<hr>
 	<p>
@@ -64,7 +52,7 @@
 		<select id="caixa_medidasSeparatrizes">
 			<option>Selecione o tipo de medida separatriz</option>
 			<option>Quartil</option>
-			<option>Quintil</option>
+			<option>kintil</option>
 			<option>Decil</option>
 			<option>Porcentil</option>
 		</select>
@@ -72,6 +60,9 @@
 	<hr>
 	<p>
 		<button onclick="calcular()">Calcular</button>
+	</p>
+	<p>
+		<button onclick="avancar(value)" value="C:\Users\Daniel\Desktop\Trabalho_ads\calcularDescritiva.html">Avançar</button>
 	</p>
 	<p>
 		<button onclick="abrepg(value)" value="C:\Users\Daniel\Desktop\Trabalho_ads\trabalho.html">Voltar ao menu </button>
