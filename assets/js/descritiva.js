@@ -1,6 +1,6 @@
 var vet = [];
 var vet2 = [];
-var media = []
+var ordens = [];
 function adiciona(){
 	var dadosN = Number(document.getElementById("dadosN").value);
 	
@@ -23,20 +23,17 @@ function adiciona(){
 
   
 }
+function adicionaOrdem(){
 
-function calcular(){
-	media();
+	var ordem = document.getElementById("ordem").value;
+	
+		ordens.push(ordem);
+	    document.getElementById("saidaOrdem").innerHTML = ordem + " adicionado ";
+	    localStorage.setItem("ordem", ordens)
+	
+
 }
-function media(){
-	var i = 0 ;
-	var soma=0;
-	var media=0;
-	for(i=0;i<vet.length;i++){
-		soma = soma +  vet[i]
-	}
-	media = (soma/vet.length)
-	alert(media) 
-}
+
 function ordena(){
     vet2 =  localStorage.getItem("vetor")
     document.getElementById("saida1").innerHTML = vet2
@@ -47,6 +44,10 @@ function nomeP(){
 	nomeP = localStorage.getItem("nomeVariavelDePesquisa")
     document.getElementById("saida2").innerHTML = nomeP
 
+}
+function mostrarOrdem(){
+	ordens = localStorage.getItem("ordem");
+	document.getElementById("mostrarOrdem").innerHTML = ordens
 }
 
 
@@ -59,8 +60,12 @@ function abrepg(link){
 
 function voltarDescritiva(link){
 	window.location.href=link
+	localStorage.removeItem("nomeVariavelDePesquisa")
+	localStorage.removeItem("ordem")
+	localStorage.removeItem("vetor")
+	
 }
-function avancar(link){
+function calcular(link){
 	nomeP = document.getElementById("nomeP").value
 
 	 localStorage.setItem("nomeVariavelDePesquisa", nomeP)

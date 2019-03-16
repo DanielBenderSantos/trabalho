@@ -46,6 +46,10 @@
 	<p>
 		Ordem <Br> <input type="text" id="ordem">
 	</p>
+	<p>
+		<button onclick="adicionaOrdem()">Adiciona</button>
+		<p id="saidaOrdem">
+	</p>
 	<hr>
 	<p>
 		Medidas Separatrizes:Q0 <Br>
@@ -57,12 +61,10 @@
 			<option>Porcentil</option>
 		</select>
 	</p>
+		<input type="range" class="form-control-range" min="0" max="100" step="1" value="0" id="rangeSepa" onchange="changeSlider()">
 	<hr>
 	<p>
-		<button onclick="calcular()">Calcular</button>
-	</p>
-	<p>
-		<button onclick="avancar(value)" value="C:\Users\Daniel\Desktop\Trabalho_ads\calcularDescritiva.html">Avançar</button>
+		<button onclick="calcular(value)" value="C:\Users\Daniel\Desktop\Trabalho_ads\calcularDescritiva.html">Avançar</button>
 	</p>
 	<p>
 		<button onclick="abrepg(value)" value="C:\Users\Daniel\Desktop\Trabalho_ads\trabalho.html">Voltar ao menu </button>
