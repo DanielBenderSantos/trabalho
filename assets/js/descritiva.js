@@ -4,7 +4,7 @@ var ordens = [];
 
 
 function adiciona(){
-	var dadosN = Number(document.getElementById("dadosN").value);
+	var dadosN = document.getElementById("dadosN").value;
  	   vet.push(dadosN);
 	    document.getElementById("saida").innerHTML = dadosN + " adicionado ";	         
 			//agora vai ordena
@@ -58,7 +58,14 @@ function media(){
 		soma = soma + numeros[i]
 	}
 	media = (soma / numeros.length)
+	if(isNaN(media) == true){
+		media = ("Não tem media")
+		media = localStorage.setItem("media" , media)
+		
+	}
+	else{
 	 media = localStorage.setItem("media" , media)
+	}
 }
 function mostrarMedia(){
 	media = localStorage.getItem("media");
