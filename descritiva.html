@@ -2,15 +2,16 @@
 <html>
 <head>
 	<meta charset="utf-8">
- <!-- <link rel="stylesheet" type="text/css" href="C:\Users\Daniel\Desktop\Trabalho_ads\assets\css\descritiva.css"> CSS -->
+<link rel="stylesheet" type="text/css" href="assets\css\descritiva.css">
 	<title>Descritita</title>
 </head>
 <body>
-	<script src="C:\Trabalho_ads\assets\js\descritiva.js"></script>
+	<script src="assets\js\descritiva.js"></script>
 	<h1> Descritiva </h1>
 	<hr>
 	<p>
 		Digite os dados aqui <Br> <input type="number" id="dadosN">
+
 	</p>
 	<p>
 		<button onclick="adiciona()">Adicionar numero </button>
@@ -18,29 +19,27 @@
 	<p>
 		<p id="saida">
 	</p>
-
+	<hr>
+		<p>
+		Tipo de variável <Br> 
+		<form >
+	    	Quantitativa Discreta <input type="radio" name="qua" value ="quantitativa_Discreta">
+	    	Quantitativa Contínua <input type="radio" name="qua" value="quantitativa_Continua">
+	    	Qualitativa Ordinal <input type="radio" name="qua" value="qualitativa_Ordinal">
+	    	Qualitativa Nominal <input type="radio" name="qua" value="qualitativa_Nominal">
+		</form>
+	</p>
 	<hr>
 	<p> escolha uma opção <Br> 
-		<select id="caixa_amostra_população">
-			<option>Selecione um tipo de pesquisa</option>
-	    	<option>Amostra</option>
-	    	<option>População</option>
-		</select>
+		<form >
+	    	Amostra <input type="radio" name="ap" value="amostra">
+	    	População <input type="radio" name="ap" value="população">
+		</form>
+
 	</p>
 	<hr>
 	<p>
 		Nome da variável pesquisada <Br> <input type="text" id="nomeP">
-	</p>
-	<hr>
-	<p>
-		Tipo de variável <Br> 
-		<select id="caixa_quanti_quali">
-			<option>Selecione um tipo de variavel </option>
-			<option>Quantitativa Discreta</option>
-			<option>Quantitativa Contínua</option>
-			<option>Qualitativa Ordinal</option>
-			<option>Qualitativa Nominal</option>
-		</select>
 	</p>
 	<hr>
 	<p>
@@ -51,23 +50,24 @@
 		<p id="saidaOrdem">
 	</p>
 	<hr>
-	<p>
+		<p>
 		Medidas Separatrizes:Q0 <Br>
-		<select id="caixa_medidasSeparatrizes">
-			<option>Selecione o tipo de medida separatriz</option>
-			<option>Quartil</option>
-			<option>kintil</option>
-			<option>Decil</option>
-			<option>Porcentil</option>
-		</select>
+		<form >
+	    	Quartil <input type="radio" name="medidasSeparatrizes" value="quartil">
+	    	kintil <input type="radio" name="medidasSeparatrizes" value="kintil">
+	    	Decil <input type="radio" name="medidasSeparatrizes" value="Decil">
+	    	Porcentil <input type="radio" name="medidasSeparatrizes" value="Porcentil">
+		</form>
 	</p>
-		<input type="range" class="form-control-range" min="0" max="100" step="1" value="0" id="rangeSepa" onchange="changeSlider()">
+	<p>
+		Digite a medida separatiz <input type="numero" id="medidaSeparatiz">
+	</p>
 	<hr>
 	<p>
-		<button onclick="calcular(value)" value="C:\Trabalho_ads\calcularDescritiva.html">Avançar</button>
+		<button onclick="avancar(value)" value="calcularDescritiva.html"  >Avançar</button>
 	</p>
 	<p>
-		<button onclick="abrepg(value)" value="C:\Trabalho_ads\trabalho.html">Voltar ao menu </button>
+		<button onclick="voltar(value)" value="trabalho.html" >Voltar ao menu </button>
 	</p>
 </body>
 </html> 

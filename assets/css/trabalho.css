@@ -1,0 +1,21 @@
+	h1{
+		color: #8A0808;
+		text-align: center;
+		font-size:60px;
+	}
+	h2{
+		color: #8A0868;
+		text-align: center;
+		font-size:40px;
+	}
+	button{	
+		transition: 400ms ease;
+		margin: 10px;
+		cursor: pointer;	
+		border-radius: 50px;	
+		font-size: 25px;
+		background-color:#5882FA;
+	}
+	p{
+		text-align: center
+	}

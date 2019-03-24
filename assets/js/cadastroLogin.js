@@ -51,7 +51,7 @@ function cadastro(){
 			}
 			else if(emailLogin==emailCadastro){
 				if(senhaLogin==senhaCadastro){
-					location="file:///C:/Trabalho_ads/Trabalho.html"
+					location="Trabalho.html"
 				}
 				else{alert("Nome de usuario ou senha errados")}
 			}
@@ -64,5 +64,5 @@ function cadastro(){
 		}
 
 		function Convidado(){
-			location="file:///C:/Trabalho_ads/Trabalho.html"
+			location="Trabalho.html"
 		}

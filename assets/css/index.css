@@ -1,6 +1,6 @@
 	h1{
 		text-align: center;
-		font-size: 50px;
+		font-size: 40px;
 		border-radius: 30px;
 		background-color:#5882FA;
 	
@@ -8,14 +8,14 @@
 	}
 	h2{
 		text-align: center;
-		font-size: 40px;
+		font-size: 30px;
 	}
 	button{
 		transition: 400ms ease;
 		margin: 10px;
 		cursor: pointer;	
 		border-radius: 30px;	
-		font-size: 90px;
+		font-size: 80px;
 		background-color:#5882FA;
 	}
 	p{
